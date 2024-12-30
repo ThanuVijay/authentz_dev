@@ -131,14 +131,9 @@
           A Culture Of Success
         </h1>
         <p class="text-xl text-white mb-8">
-          If you are interested in opportunities with us, submit your resume
-          today at<br />
-          careers@authentz.com
+          Work with a company which is continuously challenging the boundaries. Be part of a team which is young,
+          dynamic, kool and enjoys each others success. Fill out the form and our recruitment team will reach out
         </p>
-        <button
-          class="bg-[#F4550C] hover:bg-[#F4550C] text-white text-sm font-bold py-2 px-6 rounded-sm flex items-center">
-          Apply
-        </button>
       </div>
       <div class="mb-10 md:mb-0 flex justify-center md:justify-end md:mx-20">
         <svg xmlns="http://www.w3.org/2000/svg" height="361" viewBox="0 0 555 361" fill="none" class="w-full max-w-md">
@@ -1040,7 +1035,7 @@
 
 
 
-  <div class="bg-[#EDEDED]">
+  <div id="Contact" class="bg-[#EDEDED]">
     <div class="max-w-7xl mx-auto p-8">
       <div class="text-center mb-8">
         <h1 class="text-4xl font-bold text-[#310075]">
@@ -1054,14 +1049,13 @@
 
       <div class="grid md:grid-cols-2 gap-8">
         <!-- Left Column -->
-        <div class="p-6 rounded-lg ">
+        <!-- <div class="p-6 rounded-lg ">
           <h2 class="text-xl font-bold text-[#310075]">
             Want to reach out directly?
           </h2>
           <p class="text-gray-600 mb-6">
             We'll ensure a seamless connection and meaningful discussion
           </p>
-
           <div class="space-y-4">
             <div class="flex items-center gap-3">
               <div class="bg-red-100 p-2 rounded-md">
@@ -1134,50 +1128,120 @@
               </a>
             </div>
           </div>
+        </div> -->
+      </div>
+
+<!-- Right Column - Contact Form -->
+<div class="flex justify-center items-center bg-[#EDEDED]">
+  <div class="bg-white p-6 rounded-lg shadow-md w-full max-w-2xl">
+    <form class="space-y-4">
+      <div class="grid md:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">First Name</label>
+          <input type="text" placeholder="First Name"
+            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#310075]" />
         </div>
-
-        <!-- Right Column - Contact Form -->
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <form class="space-y-4">
-            <div class="grid md:grid-cols-2 gap-4">
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
-                <input type="text" placeholder="Example Name"
-                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#310075]" />
-              </div>
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                <input type="email" placeholder="example@yourmail.com"
-                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#310075]" />
-              </div>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-4">
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
-                <input type="tel" placeholder="076 123 4567"
-                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#310075]" />
-              </div>
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-1">Occupation</label>
-                <input type="text" placeholder="Student"
-                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#310075]" />
-              </div>
-            </div>
-
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
-              <textarea rows="4" placeholder="Type your message here..."
-                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#310075]"></textarea>
-            </div>
-
-            <button type="submit"
-              class="w-full bg-[#F4550C] text-white py-2 px-4 rounded-md hover:bg-orange-600 transition-colors focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 hover:text-[#310075]">
-              Send message →
-            </button>
-          </form>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
+          <input type="text" placeholder="Last Name"
+            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#310075]" />
         </div>
       </div>
+
+      <div class="grid md:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+          <input type="email" placeholder="example@yourmail.com"
+            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#310075]" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+          <div class="flex items-center space-x-2">
+            <!-- Country Code Dropdown -->
+            <div id="custom-dropdown"
+              class="relative border border-gray-300 rounded-md px-8 py-2 cursor-pointer bg-white flex items-center">
+              <span id="selected-country" class="flex items-center">
+                <img id="selected-flag" src="https://flagcdn.com/w40/in.png" alt="India" class="w-6 h-4 mr-2" />
+                <span id="selected-code">+91</span>
+              </span>
+            </div>
+            <!-- Phone Input -->
+            <input type="tel" placeholder="761234567"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#310075]" />
+          </div>
+          <!-- Dropdown Options -->
+          <div id="dropdown-options"
+            class="absolute hidden bg-white border border-gray-300 rounded-md mt-1 w-64 max-h-40 overflow-auto z-10">
+            <!-- Options will be dynamically populated -->
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Occupation</label>
+        <input type="text" placeholder="Student"
+          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#310075]" />
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+        <textarea rows="4" placeholder="Type your message here..."
+          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#310075]"></textarea>
+      </div>
+
+      <button type="submit"
+        class="w-full bg-[#F4550C] text-white py-2 px-4 rounded-md hover:bg-orange-600 transition-colors focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 hover:text-[#310075]">
+        Send message →
+      </button>
+    </form>
+  </div>
+</div>
+
+
+        <script>
+          const countries = [
+            { name: "India", code: "+91", flag: "https://flagcdn.com/w40/in.png" },
+            { name: "United States", code: "+1", flag: "https://flagcdn.com/w40/us.png" },
+            { name: "Australia", code: "+61", flag: "https://flagcdn.com/w40/au.png" },
+            { name: "United Kingdom", code: "+44", flag: "https://flagcdn.com/w40/gb.png" },
+            { name: "Canada", code: "+1", flag: "https://flagcdn.com/w40/ca.png" },
+            { name: "Singapore", code: "+65", flag: "https://flagcdn.com/w40/sg.png" },
+          ];
+
+          // Populate custom dropdown
+          function populateCustomDropdown() {
+            const dropdownOptions = document.getElementById("dropdown-options");
+            countries.forEach((country, index) => {
+              const option = document.createElement("div");
+              option.className = "flex items-center px-3 py-2 hover:bg-gray-100 cursor-pointer";
+              option.setAttribute("data-index", index);
+              option.innerHTML = `
+          <img src="${country.flag}" alt="${country.name}" class="w-6 h-4 mr-2" />
+          <span>${country.code}</span>
+        `;
+              option.addEventListener("click", () => selectCountry(index));
+              dropdownOptions.appendChild(option);
+            });
+          }
+
+          // Handle selection
+          function selectCountry(index) {
+            const selectedCountry = countries[index];
+            document.getElementById("selected-flag").src = selectedCountry.flag;
+            document.getElementById("selected-flag").alt = selectedCountry.name;
+            document.getElementById("selected-code").textContent = selectedCountry.code;
+            document.getElementById("dropdown-options").classList.add("hidden");
+          }
+
+          // Toggle dropdown visibility
+          document.getElementById("custom-dropdown").addEventListener("click", () => {
+            const dropdownOptions = document.getElementById("dropdown-options");
+            dropdownOptions.classList.toggle("hidden");
+          });
+
+          // Initialize dropdown
+          document.addEventListener("DOMContentLoaded", populateCustomDropdown);
+        </script>
     </div>
   </div>
   <!-- Footer -->
@@ -1237,7 +1301,7 @@
 
       <!-- Copyright -->
       <div class="text-center text-sm">
-        <p>©2024 authentz.com. All rights reserved</p>
+        <p>©2025 authentz.com. All rights reserved</p>
       </div>
     </div>
   </footer>
