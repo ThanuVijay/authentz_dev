@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="path/to/custom.css">
 </head>
 
-<body style="background-color: #310075;">
-
+<body>
+<div class="bg-[#310075]">
   <!-- Splash Screen -->
   <div id="splash-screen" class="fixed inset-0 flex items-center justify-center bg-[#310075] z-50">
     <img src="/assets/images/primary_logo.png" alt="Logo" class="h-20 animate-pulse">
@@ -26,7 +26,7 @@
   </script>
 
   <!-- Navigation -->
-  <nav class="container mx-auto px-6 py-4">
+  <nav class="container mx-auto px-6 py-4 bg-[#310075]">
     <div class="flex items-center justify-between md:mx-20 lg:mx-10">
       <!-- Logo -->
       <div class="flex items-center pl-6">
@@ -53,7 +53,7 @@
       <div id="nav-links"
         class="hidden md:flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-8 text-white lg:space-x-4">
         <a href="/index.html" class="hover:text-[#05DDBE]">Home</a>
-        <a href="/Product&Service.html" class="hover:text-[#05DDBE]">Product & Services</a>
+        <a href="/Product&Service.html" class="hover:text-[#05DDBE]">Products & Services</a>
         <a href="/knock-knock.html" class="hover:text-[#05DDBE]">Knock Knock</a>
         <div class="relative">
           <button id="dropdown-toggle"
@@ -87,7 +87,7 @@
     <!-- Mobile Navigation Links -->
     <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-4">
       <a href="/index.html" class="block text-white hover:text-[#05DDBE]">Home</a>
-      <a href="/Product&Service.html" class="block text-white hover:text-[#05DDBE]">Product & Services</a>
+      <a href="/Product&Service.html" class="block text-white hover:text-[#05DDBE]">Products & Services</a>
       <a href="/knock-knock.html" class="block text-white hover:text-[#05DDBE]">Knock Knock</a>
       <a href="/company.html" class="block text-white hover:text-[#05DDBE]">About Us</a>
       <a href="/newsandinsights.html" class="block text-white hover:text-[#05DDBE]">News & Insights</a>
@@ -126,14 +126,14 @@
 
 
   <!-- Hero Section -->
-  <main class="container mx-auto px-6 py-10 text-center">
+  <main class="container mx-auto px-6 py-10 text-center bg-[#310075]">
     <h1 class="text-4xl md:text-7xl font-bold mb-8 text-white">
       Welcome to Authentz
     </h1>
-    <p class="text-3xl md:text-5xl max-w-10xl mx-auto mb-12 text-gray-300 leading-tight md:max-w-8xl">
+    <p class="text-3xl md:text-5xl max-w-10xl mx-auto mb-12 text-white leading-tight md:max-w-8xl">
       Authentz transforms higher education recruitment,<br />compliance, and admissions with
       AI-powered,<br />data-driven
-      solutions
+      solutions.
     </p>
     <div class="flex justify-center space-x-4">
       <button class="px-8 py-3 rounded-lg bg-[#F4550C] text-white hover:bg-opacity-90 transition hover:text-[#310075]">
@@ -152,11 +152,12 @@
       </div>
     </div>
   </main>
+</div>
   <div class="bg-[#ECECEC]">
     <div class="container mx-auto px-4 py-16">
       <!-- Header Section -->
       <div class="text-center mb-16">
-        <h1 class="text-4xl md:text-5xl font-bold text-brand-purple mb-6 text-[#310075]">Services & Products</h1>
+        <h1 class="text-4xl md:text-5xl font-bold text-brand-purple mb-6 text-[#310075]">Products & Services</h1>
         <p class="text-gray-600 max-w-4xl mx-auto">
           Authentz delivers AI-powered solutions for recruitment, compliance, and admissions, ensuring faster, accurate,
           and
@@ -223,7 +224,7 @@
       <header class="text-center mb-12">
         <h1 class="text-4xl font-bold text-[#310075] mb-6">We are located in</h1>
         <p class="text-gray-600 max-w-4xl mx-auto">
-          Our Board consists of leaders & visionaries from education and other fields who continue to guide mentor and
+          Our board consists of leaders & visionaries from education and other fields who continue to guide mentor and
           challenge our capabilities to ensure we provide our clients with cost effective solutions continuously.
         </p>
       </header>
@@ -283,14 +284,14 @@
         <div class="bg-white rounded-lg shadow-md">
           <button onclick="toggleFaq(this)"
             class="w-full px-4 py-3 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
-            <span class="text-md font-semibold">What is the implementation time ?</span>
+            <span class="text-md font-semibold text-gray-600">What is the implementation time ?</span>
             <svg class="w-5 h-5 text-[#310075] transition-transform duration-300" fill="none" stroke="currentColor"
               viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
             </svg>
           </button>
           <div class="hidden px-4 pb-2 text-gray-700 text-md font-normal">
-            <p>Implementation time depends on the unique needs of each client , for standardized requirements
+            <p>Implementation time depends on the unique needs of each client, for standardized requirements
               implementation can take 1-3 weeks time.</p>
           </div>
         </div>
@@ -299,7 +300,7 @@
         <div class="bg-white rounded-lg shadow-md">
           <button onclick="toggleFaq(this)"
             class="w-full px-4 py-3 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
-            <span class="text-md font-semibold">What is the pricing ?</span>
+            <span class="text-md font-semibold text-gray-600">What is the pricing ?</span>
             <svg class="w-5 h-5 text-[#310075] transition-transform duration-300" fill="none" stroke="currentColor"
               viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
@@ -314,14 +315,14 @@
         <div class="bg-white rounded-lg shadow-md">
           <button onclick="toggleFaq(this)"
             class="w-full px-4 py-3 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
-            <span class="text-md font-semibold">Is the technology reliable?</span>
+            <span class="text-md font-semibold text-gray-600">Is the technology reliable?</span>
             <svg class="w-5 h-5 text-[#310075] transition-transform duration-300" fill="none" stroke="currentColor"
               viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
             </svg>
           </button>
           <div class="hidden px-4 pb-2 text-gray-700 text-md font-normal">
-            <p>The platform is powered by next Gen AI with complete analysis , for complex interactions human audit is
+            <p>The platform is powered by next Gen AI with complete analysis, for complex interactions human audit is
               also undertaken to provide accurate synopsis.</p>
           </div>
         </div>
@@ -330,15 +331,15 @@
         <div class="bg-white rounded-lg shadow-md">
           <button onclick="toggleFaq(this)"
             class="w-full px-4 py-3 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
-            <span class="text-md font-semibold">Will support be provided at time of on boarding ?</span>
+            <span class="text-md font-semibold text-gray-600">Will support be provided at time of on boarding ?</span>
             <svg class="w-5 h-5 text-[#310075] transition-transform duration-300" fill="none" stroke="currentColor"
               viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
             </svg>
           </button>
           <div class="hidden px-4 pb-2 text-gray-700 text-md font-normal">
-            <p>There is an entire team which will be deployed for on boarding as well as to resolve issue in BAU stage ,
-              at no point in time will you lack support .</p>
+            <p>There is an entire team which will be deployed for on boarding as well as to resolve issue in BAU stage,
+              at no point in time will you lack support.</p>
           </div>
         </div>
 
@@ -346,14 +347,14 @@
         <div class="bg-white rounded-lg shadow-md">
           <button onclick="toggleFaq(this)"
             class="w-full px-4 py-3 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
-            <span class="text-md font-semibold">How scalable/ flexible is the product ?</span>
+            <span class="text-md font-semibold text-gray-600">How scalable/ flexible is the product ?</span>
             <svg class="w-5 h-5 text-[#310075] transition-transform duration-300" fill="none" stroke="currentColor"
               viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
             </svg>
           </button>
           <div class="hidden px-4 pb-2 text-gray-700 text-md font-normal">
-            <p>An advance notice of 2 weeks should be sufficient to scale the product to manage 100% growth .</p>
+            <p>An advance notice of 2 weeks should be sufficient to scale the product to manage 100% growth.</p>
           </div>
         </div>
 
@@ -437,7 +438,7 @@
         <!-- Navigation -->
         <nav class="flex flex-wrap justify-center gap-6 text-sm mb-6 md:mb-0">
           <a href="/index.html" class="hover:text-gray-300">Home</a>
-          <a href="/Product&Service.html" class="hover:text-gray-300">Product & Services</a>
+          <a href="/Product&Service.html" class="hover:text-gray-300">Products & Services</a>
           <a href="/knock-knock.html" class="hover:text-gray-300">Knock Knock</a>
           <a href="/company.html" class="hover:text-gray-300">About Us</a>
           <a href="/newsandinsights.html" class="hover:text-gray-300">News & Insights</a>
@@ -480,7 +481,7 @@
 
       <!-- Copyright -->
       <div class="text-center text-sm">
-        <p>©2025 authentz.com. All rights reserved</p>
+        <p>©2025 authentz.com.</p>
       </div>
     </div>
   </footer>
