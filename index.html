@@ -149,15 +149,18 @@
       <!-- Illustration Container -->
       <div class="mt-20 max-w-4xl mx-auto rounded-lg p-4">
         <div class="bg-authentz-orange rounded-lg p-8">
-          <iframe 
-            src="https://www.youtube.com/embed/hdYJD94MMd0?rel=0&modestbranding=1&showinfo=0&iv_load_policy=3&fs=1" 
-            title="YouTube video player" 
-            class="w-full rounded-lg h-[450px]" 
-            frameborder="0"
-            allowfullscreen>
-          </iframe>
+          <div class="relative w-full" style="padding-top: 56.25%;"> <!-- Aspect ratio 16:9 -->
+            <iframe 
+              src="https://www.youtube.com/embed/hdYJD94MMd0?rel=0&modestbranding=1&showinfo=0&iv_load_policy=3&fs=1" 
+              title="YouTube video player" 
+              class="absolute top-0 left-0 w-full h-full rounded-lg" 
+              frameborder="0"
+              allowfullscreen>
+            </iframe>
+          </div>
         </div>
       </div>
+      
       
     </main>
   </div>
@@ -174,7 +177,7 @@
       </div>
 
       <!-- Services Grid -->
-      <div class="grid grid-cols-2 md:grid-cols-4 sm:grid-cols-2  gap-8 max-w-6xl mx-auto justify-items-center">
+      <div class="grid grid-cols-2 md:grid-cols-4  max-sm:grid-cols-1 gap-8 max-w-6xl mx-auto justify-items-center">
         <!-- Screenz Card -->
         <div class="flex flex-col items-center">
           <div
@@ -190,7 +193,6 @@
             <h5 class="text-base font-semibold text-brand-purple text-center text-[#310075] hover:text-[#F4550C]">Pre
               Screening Interview
             </h5>
-            <p class="text-base font-normal text-gray-800 text-center">March 2025</p>
           </div>
         </div>
 
@@ -209,7 +211,6 @@
             <h5 class="text-base font-semibold text-brand-purple text-center text-[#310075] hover:text-[#F4550C]">
               Credibility Interview
             </h5>
-            <p class="text-base font-normal text-gray-800 text-center">March 2025</p>
           </div>
         </div>
 
@@ -228,7 +229,6 @@
             <h5 class="text-base font-semibold text-brand-purple text-center text-[#310075] hover:text-[#F4550C]">
               Market Development
             </h5>
-            <p class="text-base font-normal text-gray-800 text-center">March 2025</p>
           </div>
         </div>
 
@@ -247,7 +247,6 @@
             <h5 class="text-base font-semibold text-brand-purple text-center text-[#310075] hover:text-[#F4550C]">
               Application Processing
             </h5>
-            <p class="text-base font-normal text-gray-800 text-center">April 2025</p>
           </div>
         </div>
 
@@ -266,7 +265,6 @@
             <h5 class="text-base font-semibold text-brand-purple text-center text-[#310075] hover:text-[#F4550C]">
               Academic Document Verification
             </h5>
-            <p class="text-base font-normal text-gray-800 text-center">April 2025</p>
           </div>
         </div>
 
@@ -286,7 +284,6 @@
             <h5 class="text-base font-semibold text-brand-purple text-center text-[#310075] hover:text-[#F4550C]">
               Financial Document Verification
             </h5>
-            <p class="text-base font-normal text-gray-800 text-center">May 2025</p>
           </div>
         </div>
 
@@ -305,7 +302,6 @@
             <h5 class="text-base font-semibold text-brand-purple text-center text-[#310075] hover:text-[#F4550C]">
               Visa Outcome Predictability
             </h5>
-            <p class="text-base font-normal text-gray-800 text-center">May 2025</p>
           </div>
         </div>
 
@@ -325,12 +321,10 @@
             <h5 class="text-base font-semibold text-brand-purple text-center text-[#310075] hover:text-[#F4550C]">
               Data <br/> Analytics
             </h5>
-            <p class="text-base font-normal text-gray-800 text-center">June 2025</p>
           </div>
         </div>
       </div>
-
-
+      
     </div>
   </div>
   <div class="bg-gray-50">
