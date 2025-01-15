@@ -24,7 +24,7 @@
             <img src="/assets/images/primary_logo.png" alt="Logo" class="h-12 w-75 mr-2">
           </a>
         </div>
-  
+
         <!-- Hamburger Menu for Mobile -->
         <div class="md:hidden">
           <button id="menu-toggle" class="text-white focus:outline-none">
@@ -38,42 +38,46 @@
             </svg>
           </button>
         </div>
-  
+
         <!-- Navigation Links -->
         <div id="nav-links"
-        class="hidden md:flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-8 text-white lg:space-x-4">
-        <a href="/index.html" class="hover:text-[#05DDBE]">Home</a>
-        <a href="/pages/Product&Service.html" class="hover:text-[#05DDBE]">Products & Services</a>
-        <a href="/pages/knock-knock.html" class="hover:text-[#05DDBE]">Knock Knock</a>
-        <div class="relative">
-          <button id="dropdown-toggle"
-            class="flex items-center space-x-2 text-white hover:text-[#05DDBE] focus:outline-none">
-            <span>Company</span>
-            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <div id="dropdown-menu"
-            class="absolute hidden bg-[#1F2937] text-white rounded-md shadow-lg mt-2 w-44 bg-gradient-to-r from-[#2B0B58] to-[#2B0B58]">
-            <a href="/pages/company.html" class="block px-4 py-2 hover:text-[#05DDBE]">About Us</a>
-            <a href="/pages//newsandinsights.html" class="block px-4 py-2 hover:text-[#05DDBE]">News & Insights</a>
+          class="hidden md:flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-8 text-white lg:space-x-4">
+          <a href="/index.html" class="hover:text-[#05DDBE]">Home</a>
+          <a href="/pages/Product&Service.html" class="hover:text-[#05DDBE]">Products & Services</a>
+          <a href="/pages/knock-knock.html" class="hover:text-[#05DDBE]">Knock Knock</a>
+          <div class="relative">
+            <button id="dropdown-toggle"
+              class="flex items-center space-x-2 text-white hover:text-[#05DDBE] focus:outline-none">
+              <span>Company</span>
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div id="dropdown-menu"
+              class="absolute hidden bg-[#1F2937] text-white rounded-md shadow-lg mt-2 w-44 bg-gradient-to-r from-[#2B0B58] to-[#2B0B58]">
+              <a href="/pages/company.html" class="block px-4 py-2 hover:text-[#05DDBE]">About Us</a>
+              <a href="/pages//newsandinsights.html" class="block px-4 py-2 hover:text-[#05DDBE]">News & Insights</a>
+            </div>
           </div>
         </div>
-      </div>
-  
+
         <!-- Action Buttons -->
         <div class="hidden md:flex items-center space-x-4">
-          <button
-            class="px-4 py-2 text-[#F4550C] border border-[#F4550C] rounded-full hover:bg-[#F4550C] hover:text-white">
-            Log In
-          </button>
-          <button class="px-4 py-2 text-white bg-[#F4550C] rounded-full hover:bg-orange-600">
-            Sign Up
-          </button>
+          <a href="https://manage.authentz.com/admin" target="_blank">
+            <button
+              class="px-4 py-2 text-[#F4550C] border border-[#F4550C] rounded-full hover:bg-[#F4550C] hover:text-white">
+              Log In
+            </button>
+          </a>
+          <a href="https://manage.authentz.com/admin/registration" target="_blank">
+            <button class="px-4 py-2 text-white bg-[#F4550C] rounded-full hover:bg-orange-600">
+              Sign Up
+            </button>
+          </a>
         </div>
       </div>
-  
+
       <!-- Mobile Navigation Links -->
       <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-4">
         <a href="/index.html" class="block text-white hover:text-[#05DDBE]">Home</a>
@@ -83,16 +87,19 @@
         <a href="/pages/newsandinsights.html" class="block text-white hover:text-[#05DDBE]">News & Insights</a>
         <!-- Action Buttons for Mobile -->
         <div class="flex space-x-4">
-          <button
-            class="px-4 py-2 text-[#F4550C] border border-[#F4550C] rounded-full">
-            Log In
-          </button>
-          <button class="px-4 py-2 text-white bg-[#F4550C] rounded-full hover:bg-orange-600">
-            Sign Up
-          </button>
+          <a href="https://manage.authentz.com/admin" target="_blank">
+            <button class="px-4 py-2 text-[#F4550C] border border-[#F4550C] rounded-full">
+              Log In
+            </button>
+          </a>
+          <a href="https://manage.authentz.com/admin/registration" target="_blank">
+            <button class="px-4 py-2 text-white bg-[#F4550C] rounded-full hover:bg-orange-600">
+              Sign Up
+            </button>
+          </a>
         </div>
       </div>
-  
+
     </nav>
 
     <script>
@@ -431,7 +438,7 @@
             // Handle form submission
             document.getElementById("contact-form").addEventListener("submit", function (event) {
               event.preventDefault();
-          
+
               const formData = {
                 firstname: document.getElementById("firstName").value,
                 lastname: document.getElementById("lastName").value,
@@ -440,7 +447,7 @@
                 occupation: document.getElementById("occupation").value,
                 message: document.getElementById("message").value,
               };
-          
+
               // Send data to the API
               fetch("https://manage.authentz.com/api/v1/sendEnquiryEmail", {
                 method: "POST",
@@ -465,7 +472,7 @@
                   alert("Failed to send message. Please try again later.");
                 });
             });
-          
+
             // Country Data
             const countries = [
               { code: "+91", flag: "https://flagcdn.com/w40/in.png", name: "India" },
@@ -474,12 +481,12 @@
               { code: "+61", flag: "https://flagcdn.com/w40/au.png", name: "Australia" },
               // Add more countries as needed
             ];
-          
+
             const dropdownOptions = document.getElementById("dropdown-options");
             const dropdownBtn = document.getElementById("dropdown-btn");
             const selectedFlag = document.getElementById("selected-flag");
             const selectedCode = document.getElementById("selected-code");
-          
+
             // Populate Country Code Dropdown
             countries.forEach(country => {
               const option = document.createElement("div");
@@ -495,12 +502,12 @@
               });
               dropdownOptions.appendChild(option);
             });
-          
+
             // Toggle Dropdown
             dropdownBtn.addEventListener("click", () => {
               dropdownOptions.classList.toggle("hidden");
             });
-          
+
             // Close Dropdown on Outside Click
             document.addEventListener("click", (event) => {
               if (!dropdownBtn.contains(event.target) && !dropdownOptions.contains(event.target)) {
@@ -508,55 +515,9 @@
               }
             });
           </script>
-          
+
         </div>
       </div>
-
-
-      <!-- <script>
-        const countries = [
-          { name: "India", code: "+91", flag: "https://flagcdn.com/w40/in.png" },
-          { name: "United States", code: "+1", flag: "https://flagcdn.com/w40/us.png" },
-          { name: "Australia", code: "+61", flag: "https://flagcdn.com/w40/au.png" },
-          { name: "United Kingdom", code: "+44", flag: "https://flagcdn.com/w40/gb.png" },
-          { name: "Canada", code: "+1", flag: "https://flagcdn.com/w40/ca.png" },
-          { name: "Singapore", code: "+65", flag: "https://flagcdn.com/w40/sg.png" },
-        ];
-
-        // Populate custom dropdown
-        function populateCustomDropdown() {
-          const dropdownOptions = document.getElementById("dropdown-options");
-          countries.forEach((country, index) => {
-            const option = document.createElement("div");
-            option.className = "flex items-center px-3 py-2 hover:bg-gray-100 cursor-pointer";
-            option.setAttribute("data-index", index);
-            option.innerHTML = `
-          <img src="${country.flag}" alt="${country.name}" class="w-6 h-4 mr-2" />
-          <span>${country.code}</span>
-        `;
-            option.addEventListener("click", () => selectCountry(index));
-            dropdownOptions.appendChild(option);
-          });
-        }
-
-        // Handle selection
-        function selectCountry(index) {
-          const selectedCountry = countries[index];
-          document.getElementById("selected-flag").src = selectedCountry.flag;
-          document.getElementById("selected-flag").alt = selectedCountry.name;
-          document.getElementById("selected-code").textContent = selectedCountry.code;
-          document.getElementById("dropdown-options").classList.add("hidden");
-        }
-
-        // Toggle dropdown visibility
-        document.getElementById("custom-dropdown").addEventListener("click", () => {
-          const dropdownOptions = document.getElementById("dropdown-options");
-          dropdownOptions.classList.toggle("hidden");
-        });
-
-        // Initialize dropdown
-        document.addEventListener("DOMContentLoaded", populateCustomDropdown);
-      </script> -->
     </div>
   </div>
   <!-- Footer -->

@@ -1,12 +1,3 @@
-/* Link the Figtree font */
-@font-face {
-  font-family: 'Figtree';
-  src: url('https://fonts.gstatic.com/s/figtree/v12/cIf5MaFYk4qWV4lU-j9VSo8.woff2') format('woff2'),
-       url('https://fonts.gstatic.com/s/figtree/v12/cIf5MaFYk4qWV4lU-j9VSo8.woff') format('woff');
-  font-weight: 400; /* Adjust as necessary */
-  font-style: normal;
-}
-
 /* Apply the font globally */
 body {
   font-family: 'Figtree', sans-serif;

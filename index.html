@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="/assets/css/custom.css">
 </head>
 
-<body>
+<body >
   <div class="bg-[#310075]">
     <!-- Navigation -->
     <nav class="container mx-auto px-6 py-4 bg-[#310075]">
@@ -61,13 +61,18 @@
 
         <!-- Action Buttons -->
         <div class="hidden md:flex items-center space-x-4">
-          <button
-            class="px-4 py-2 text-[#F4550C] border border-[#F4550C] rounded-full hover:bg-[#F4550C] hover:text-white">
-            Log In
-          </button>
-          <button class="px-4 py-2 text-white bg-[#F4550C] rounded-full hover:bg-orange-600">
-            Sign Up
-          </button>
+          <a href="https://manage.authentz.com/admin" target="_blank">
+            <button
+              class="px-4 py-2 text-[#F4550C] border border-[#F4550C] rounded-full hover:bg-[#F4550C] hover:text-white">
+              Log In
+            </button>
+          </a>
+          <a href="https://manage.authentz.com/admin/registration" target="_blank">
+            <button class="px-4 py-2 text-white bg-[#F4550C] rounded-full hover:bg-orange-600">
+              Sign Up
+            </button>
+          </a>
+
         </div>
       </div>
 
@@ -113,7 +118,7 @@
 
 
     <!-- Hero Section -->
-    <main class="container mx-auto px-6 py-10 text-center bg-[#310075]">
+    <div class="container mx-auto px-6 py-10 text-center bg-[#310075]">
       <h1 class="text-4xl md:text-7xl font-bold mb-8 text-white">
         Welcome to Authentz
       </h1>
@@ -123,14 +128,18 @@
         solutions.
       </p>
       <div class="flex justify-center space-x-4">
-        <button
-          class="px-8 py-3 rounded-lg bg-[#F4550C] text-white hover:bg-opacity-90 transition hover:text-[#310075]">
-          Log In
-        </button>
-        <button
-          class="px-8 py-3 rounded-lg border border-[#F4550C] text-white hover:bg-[#F4550C] hover:text-authentz-purple transition">
-          Sign Up
-        </button>
+        <a href="https://manage.authentz.com/admin" target="_blank">
+          <button
+            class="px-8 py-3 rounded-lg bg-[#F4550C] text-white hover:bg-opacity-90 transition hover:text-[#310075]">
+            Log In
+          </button>
+        </a>
+        <a href="https://manage.authentz.com/admin/registration" >
+          <button
+            class="px-8 py-3 rounded-lg border border-[#F4550C] text-white hover:bg-[#F4550C] hover:text-authentz-purple transition">
+            Sign Up
+          </button>
+        </a>
       </div>
 
       <!-- Illustration Container -->
@@ -147,7 +156,7 @@
       </div>
 
 
-    </main>
+    </div>
   </div>
   <div class="bg-[#ECECEC]">
     <div class="container mx-auto px-4 py-16">
